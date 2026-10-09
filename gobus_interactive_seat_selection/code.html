@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline-variant":"#e2bebc","on-secondary-fixed":"#0f1c2f","on-surface-variant":"#5a403f","surface-container-low":"#f2f4f7","on-surface":"#191c1e","outline":"#8e706e","secondary":"#535f75","secondary-container":"#d4e0fb","on-tertiary-fixed":"#3e0022","inverse-surface":"#2d3133","on-primary-fixed":"#410006","inverse-on-surface":"#eff1f4","surface-container-high":"#e6e8eb","surface-tint":"#b6212e","on-secondary":"#ffffff","on-tertiary-container":"#fffcff","secondary-fixed-dim":"#bbc7e1","tertiary-fixed-dim":"#ffb0cd","surface-container":"#eceef1","surface-container-highest":"#e0e3e6","surface-container-lowest":"#ffffff","on-error-container":"#93000a","on-background":"#191c1e","inverse-primary":"#ffb3b0","tertiary-fixed":"#ffd9e4","surface-bright":"#f7f9fc","secondary-fixed":"#d7e3fe","primary":"#b31e2c","surface-dim":"#d8dadd","surface":"#f7f9fc","on-secondary-container":"#57637a","on-primary-container":"#fffbff","on-tertiary-fixed-variant":"#8c0053","error":"#ba1a1a","on-tertiary":"#ffffff","on-primary-fixed-variant":"#93001a","tertiary":"#b10e6b","primary-fixed":"#ffdad8","surface-variant":"#e0e3e6","primary-fixed-dim":"#ffb3b0","on-secondary-fixed-variant":"#3b475d","background":"#f7f9fc","primary-container":"#d63941","on-error":"#ffffff","tertiary-container":"#d23285","error-container":"#ffdad6","on-primary":"#ffffff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-md":"1rem","space-xs":"0.25rem","space-sm":"0.5rem",margin:"2rem","space-xl":"2.5rem","margin-mobile":"1rem","gutter-mobile":"0.75rem",gutter:"1.5rem","space-lg":"1.5rem"},fontFamily:{"body-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-md-mobile":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-lg":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"mono-seat":["Inter"],display:["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"]},fontSize:{"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"headline-lg-mobile":["24px",{lineHeight:"32px",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"26px",fontWeight:"600"}],"headline-md-mobile":["20px",{lineHeight:"28px",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"700"}],"display-mobile":["30px",{lineHeight:"38px",fontWeight:"800"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"500"}],"headline-lg":["32px",{lineHeight:"40px",fontWeight:"700"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"600"}],"mono-seat":["12px",{lineHeight:"16px",fontWeight:"600"}],display:["40px",{lineHeight:"48px",fontWeight:"800"}],"label-md":["12px",{lineHeight:"16px",fontWeight:"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="h-1 bg-primary w-full"></div><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xl"><div class="flex items-center gap-space-sm"><img alt="GoBus Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WNduh8w3pbMPyiMIicAPPZMLVcTjO0yhTFi_UMLFT_IWOzKW5L5xEmEicV59amkxggePlJwdYZ8PfNa0jtFmnVRZh7EyNSnagdXGTqjBWDehakk5q-x-cVY_dU1Jq6mKb8tq_1arQW7D7R1411XHVJBa1SVbz448ZZblhQaBraJwcy0hWeZyZ-rJYhiuWcBZ1KLzQMDhVHLu47r5fiqq_2nvhEbkcFH0XzIgQd2dJNh-8GA1ZZuH3RVUM"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-bold">GoBus</span></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded-lg"><a aria-current="page" class="px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded-lg" data-path="bus-tickets" href="#">Bus Tickets</a><a class="px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="booking-history" href="#">Booking History</a><a class="px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="offers" href="#">Offers</a><a class="px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="help-and-faq" href="#">Help &amp; FAQ</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-md py-space-sm rounded-full bg-surface-container-low text-on-surface"><span class="material-symbols-outlined text-primary text-[18px]">support_agent</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">24/7 Support</span><span class="font-mono-seat text-mono-seat font-bold text-on-surface">+91 800-462-8700</span></div></div><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container-low text-on-surface cursor-pointer hover:bg-surface-container transition-colors"><span class="font-label-md text-label-md font-bold">INR ₹</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">keyboard_arrow_down</span></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKLv2olA3V8ppoQ227e27tT3vKqoGVKla9u2LyZ8FDrUWCj2JEcKDmetqYpDKrBTzzL8KlDYEiZWAw142i8q1MDtwVMpAeJ79PvPuvHPlEshNpFwqn9Zt2WO_QNpxYjQHwYsFSkTolQCrlzSPfheGQ4rTs-GWXYqR1HZ3u7gxOmiEhCSG5QVBuQv6y2XLPjyxAMYiAT4E6q1_IpG-mf_4j_OpVkxNQ9fNX76l2LQTIEsNuUG_892pP"/><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md font-bold text-on-surface leading-tight">Rahul Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant">Frequent Traveler</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px] cursor-pointer hover:text-on-surface">keyboard_arrow_down</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Dynamic Route Progress Indicator Banner -->
+<div class="w-full bg-surface-container-low py-space-sm px-gutter">
+<div class="max-w-7xl mx-auto flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center justify-center w-5 h-5 rounded-full bg-primary text-on-primary font-mono-seat text-[10px]">1</span>
+<span class="font-bold text-primary">Seat Layout</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="flex items-center justify-center w-5 h-5 rounded-full bg-surface-container-high text-on-surface-variant font-mono-seat text-[10px]">2</span>
+<span>Passenger Details</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="flex items-center justify-center w-5 h-5 rounded-full bg-surface-container-high text-on-surface-variant font-mono-seat text-[10px]">3</span>
+<span>Payment &amp; Pass</span>
+</div>
+<div class="hidden md:flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[16px]">schedule</span>
+<span>Seats locked for <span class="font-bold font-mono-seat text-primary" id="sessionTimer">09:42</span></span>
+</div>
+</div>
+</div>
+<!-- Header Details Surface -->
+<section class="w-full bg-surface-container-lowest shadow-sm mb-space-lg">
+<div class="max-w-7xl mx-auto px-gutter py-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Operator & Route Badging -->
+<div class="flex items-start md:items-center gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[32px]">directions_bus</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs mb-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">IntrCity SmartBus</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">Multi-Axle Volvo 9600 B11R</span>
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+                4.8
+              </span>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">my_location</span>
+                Live GPS
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              AC Sleeper (2+1 Class) • Sanitized &amp; GPS Linked • Washroom on-board
+            </p>
+</div>
+</div>
+<!-- Schedule Block -->
+<div class="flex items-center justify-between lg:justify-end gap-space-lg bg-surface-container-low px-space-md py-space-sm rounded-xl">
+<div class="text-left">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">21:30</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">Chennai (Koyambedu)</div>
+<div class="font-mono-seat text-[11px] text-on-surface-variant">Fri, 24 Oct</div>
+</div>
+<div class="flex flex-col items-center px-space-xs">
+<span class="font-mono-seat text-[11px] text-on-surface-variant">7h 15m</span>
+<div class="w-16 h-0.5 bg-outline-variant relative my-1">
+<div class="absolute -top-1 right-0 w-2 h-2 rounded-full bg-primary"></div>
+</div>
+<span class="font-label-sm text-[10px] text-primary font-bold uppercase tracking-wider">Direct</span>
+</div>
+<div class="text-right">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">04:45</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">Bangalore (Silk Board)</div>
+<div class="font-mono-seat text-[11px] text-on-surface-variant">Sat, 25 Oct</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Booking Canvas (Split Layout) -->
+<main class="w-full max-w-7xl mx-auto px-gutter pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Bus Deck Interactivity (7 Cols on LG, 8 on XL) -->
+<section class="lg:col-span-7 xl:col-span-8 flex flex-col gap-space-md">
+<!-- Deck Interactive Switcher & Control Header -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-xl">
+<button class="px-space-md py-2 rounded-lg font-label-md text-label-md transition-all font-bold bg-surface-container-lowest text-primary shadow-sm flex items-center gap-1.5" id="tabLowerDeck" onclick="switchDeck('lower')">
+<span class="material-symbols-outlined text-[16px]">airline_seat_flat</span>
+              Lower Deck (15 Berths)
+            </button>
+<button class="px-space-md py-2 rounded-lg font-label-md text-label-md transition-all font-medium text-on-surface-variant hover:text-on-surface flex items-center gap-1.5" id="tabUpperDeck" onclick="switchDeck('upper')">
+<span class="material-symbols-outlined text-[16px]">airline_seat_flat_angled</span>
+              Upper Deck (15 Berths)
+            </button>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">info</span>
+<span>Berth size: 6ft x 2.6ft with charging ports</span>
+</div>
+</div>
+<!-- Legend Pill Bar -->
+<div class="bg-surface-container-lowest rounded-xl px-space-md py-space-sm shadow-sm flex flex-wrap items-center justify-between gap-y-2 gap-x-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-4 rounded bg-surface-container-lowest border-2 border-surface-container-high shadow-xs"></div>
+<span class="font-label-sm text-label-sm text-on-surface">Available (₹849)</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-6 h-4 rounded bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[12px] font-bold">check</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary">Selected</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-6 h-4 rounded bg-secondary opacity-60"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Booked (Male/Gen)</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-6 h-4 rounded bg-tertiary-fixed border border-tertiary/40 flex items-center justify-center">
+<span class="material-symbols-outlined text-[10px] text-tertiary">female</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Female Reserved</span>
+</div>
+</div>
+<!-- Physical Bus Exterior Frame Container -->
+<div class="bg-surface-container-low rounded-2xl p-space-md shadow-sm relative overflow-hidden">
+<!-- Bus Shell Graphic Envelope -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-4 md:p-6 relative max-w-2xl mx-auto">
+<!-- Driver Cabin / Front Bulkhead Area -->
+<div class="pb-4 mb-4 flex items-center justify-between bg-surface-container-low/70 -mx-4 -mt-4 p-4 rounded-t-xl">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest shadow-sm flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">sports_motorsports</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface uppercase tracking-wider block">Front of Bus</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Entry Door / Sanitizer Desk</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px] text-secondary">airline_seat_recline_extra</span>
+<span class="font-mono-seat text-mono-seat">Captain Cabin</span>
+</div>
+</div>
+<!-- Lower Deck Layout (Default Visible) -->
+<div class="space-y-4" id="deckLowerLayout">
+<div class="flex items-center justify-between px-2 mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Single Sleeper (Window)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Double Sleeper (Window &amp; Aisle)</span>
+</div>
+<!-- Deck Grid Matrix: 5 Rows of Sleeper Berths -->
+<!-- Row 1: L1 (Booked) | AISLE | L6 (Avail), L7 (Booked) -->
+<div class="grid grid-cols-12 gap-3 items-center">
+<!-- Single Sleeper Left -->
+<div class="col-span-3">
+<div class="h-16 rounded-lg bg-secondary/30 flex flex-col justify-between p-2 cursor-not-allowed text-on-surface-variant/70">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold">L1</span>
+<span class="material-symbols-outlined text-[14px]">lock</span>
+</div>
+<span class="font-label-sm text-[10px]">Booked</span>
+</div>
+</div>
+<!-- Central Aisle Walking Corridor -->
+<div class="col-span-2 flex items-center justify-center h-full">
+<div class="w-full flex items-center justify-center py-2 bg-surface-container-low rounded">
+<span class="font-mono-seat text-[10px] text-on-surface-variant/50 tracking-widest uppercase">AISLE</span>
+</div>
+</div>
+<!-- Double Sleeper Right -->
+<div class="col-span-7 grid grid-cols-2 gap-2">
+<!-- L6 -->
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-L6" onclick="toggleSeat('L6', 849, 'Double Sleeper')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">L6</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">king_bed</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹849</span>
+</div>
+<!-- L7 -->
+<div class="h-16 rounded-lg bg-secondary/30 flex flex-col justify-between p-2 cursor-not-allowed text-on-surface-variant/70">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold">L7</span>
+<span class="material-symbols-outlined text-[14px]">lock</span>
+</div>
+<span class="font-label-sm text-[10px]">Booked</span>
+</div>
+</div>
+</div>
+<!-- Row 2: L2 (Available) | AISLE | L8 (Available), L9 (Available) -->
+<div class="grid grid-cols-12 gap-3 items-center">
+<!-- Single Sleeper Left: L2 -->
+<div class="col-span-3">
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-L2" onclick="toggleSeat('L2', 899, 'Single Sleeper')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">L2</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">single_bed</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹899</span>
+</div>
+</div>
+<!-- Aisle -->
+<div class="col-span-2 flex items-center justify-center">
+<div class="w-full flex items-center justify-center py-2 bg-surface-container-low rounded">
+<span class="font-mono-seat text-[10px] text-on-surface-variant/40">···</span>
+</div>
+</div>
+<!-- Double Sleeper Right: L8 & L9 -->
+<div class="col-span-7 grid grid-cols-2 gap-2">
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-L8" onclick="toggleSeat('L8', 849, 'Double Sleeper')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">L8</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">king_bed</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹849</span>
+</div>
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-L9" onclick="toggleSeat('L9', 849, 'Double Sleeper')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">L9</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">king_bed</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹849</span>
+</div>
+</div>
+</div>
+<!-- Row 3: L3 (Selected - Red) | AISLE | L10 (Selected - Red), L11 (Available) -->
+<div class="grid grid-cols-12 gap-3 items-center">
+<!-- Single Sleeper Left: L3 -->
+<div class="col-span-3">
+<div class="seat-berth h-16 rounded-lg bg-primary text-on-primary transition-all cursor-pointer flex flex-col justify-between p-2 shadow-md" id="seat-L3" onclick="toggleSeat('L3', 849, 'Single Sleeper')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold">L3</span>
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-[10px] font-bold">Selected</span>
+<span class="font-mono-seat text-[11px] font-bold">₹849</span>
+</div>
+</div>
+</div>
+<!-- Aisle -->
+<div class="col-span-2 flex items-center justify-center">
+<div class="w-full flex items-center justify-center py-2 bg-surface-container-low rounded">
+<span class="font-mono-seat text-[10px] text-on-surface-variant/40">···</span>
+</div>
+</div>
+<!-- Double Sleeper Right: L10 (Selected) & L11 (Available) -->
+<div class="col-span-7 grid grid-cols-2 gap-2">
+<div class="seat-berth h-16 rounded-lg bg-primary text-on-primary transition-all cursor-pointer flex flex-col justify-between p-2 shadow-md" id="seat-L10" onclick="toggleSeat('L10', 849, 'Double Sleeper')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold">L10</span>
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-[10px] font-bold">Selected</span>
+<span class="font-mono-seat text-[11px] font-bold">₹849</span>
+</div>
+</div>
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-L11" onclick="toggleSeat('L11', 849, 'Double Sleeper')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">L11</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">king_bed</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹849</span>
+</div>
+</div>
+</div>
+<!-- Row 4: L4 (Available) | AISLE | L12 (Booked Female), L13 (Booked Female) -->
+<div class="grid grid-cols-12 gap-3 items-center">
+<!-- Single Sleeper Left: L4 -->
+<div class="col-span-3">
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-L4" onclick="toggleSeat('L4', 849, 'Single Sleeper')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">L4</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">single_bed</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹849</span>
+</div>
+</div>
+<!-- Aisle -->
+<div class="col-span-2 flex items-center justify-center">
+<div class="w-full flex items-center justify-center py-2 bg-surface-container-low rounded">
+<span class="font-mono-seat text-[10px] text-on-surface-variant/40">···</span>
+</div>
+</div>
+<!-- Double Sleeper Right: L12 & L13 (Booked for Females) -->
+<div class="col-span-7 grid grid-cols-2 gap-2">
+<div class="h-16 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex flex-col justify-between p-2 cursor-not-allowed">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold">L12</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary">female</span>
+</div>
+<span class="font-label-sm text-[10px] text-tertiary font-semibold">Reserved (F)</span>
+</div>
+<div class="h-16 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex flex-col justify-between p-2 cursor-not-allowed">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold">L13</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary">female</span>
+</div>
+<span class="font-label-sm text-[10px] text-tertiary font-semibold">Reserved (F)</span>
+</div>
+</div>
+</div>
+<!-- Row 5: L5 (Booked Female) | AISLE | L14 (Available), L15 (Available) -->
+<div class="grid grid-cols-12 gap-3 items-center">
+<!-- Single Sleeper Left: L5 -->
+<div class="col-span-3">
+<div class="h-16 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex flex-col justify-between p-2 cursor-not-allowed">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold">L5</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary">female</span>
+</div>
+<span class="font-label-sm text-[10px] text-tertiary font-semibold">Reserved (F)</span>
+</div>
+</div>
+<!-- Aisle -->
+<div class="col-span-2 flex items-center justify-center">
+<div class="w-full flex items-center justify-center py-2 bg-surface-container-low rounded">
+<span class="font-mono-seat text-[10px] text-on-surface-variant/40">···</span>
+</div>
+</div>
+<!-- Double Sleeper Right: L14 & L15 -->
+<div class="col-span-7 grid grid-cols-2 gap-2">
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-L14" onclick="toggleSeat('L14', 849, 'Double Sleeper')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">L14</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">king_bed</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹849</span>
+</div>
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-L15" onclick="toggleSeat('L15', 849, 'Double Sleeper')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">L15</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">king_bed</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹849</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Upper Deck Layout (Hidden initially, accessible via tab switch) -->
+<div class="hidden space-y-4" id="deckUpperLayout">
+<div class="flex items-center justify-between px-2 mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Upper Single Sleeper</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Upper Double Sleeper</span>
+</div>
+<!-- Row 1: U1 | AISLE | U6, U7 -->
+<div class="grid grid-cols-12 gap-3 items-center">
+<div class="col-span-3">
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-U1" onclick="toggleSeat('U1', 949, 'Single Sleeper (Panoramic)')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">U1</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">landscape</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹949</span>
+</div>
+</div>
+<div class="col-span-2 flex items-center justify-center">
+<div class="w-full flex items-center justify-center py-2 bg-surface-container-low rounded">
+<span class="font-mono-seat text-[10px] text-on-surface-variant/40">AISLE</span>
+</div>
+</div>
+<div class="col-span-7 grid grid-cols-2 gap-2">
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-U6" onclick="toggleSeat('U6', 899, 'Double Sleeper (Upper)')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">U6</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">king_bed</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹899</span>
+</div>
+<div class="h-16 rounded-lg bg-secondary/30 flex flex-col justify-between p-2 cursor-not-allowed text-on-surface-variant/70">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold">U7</span>
+<span class="material-symbols-outlined text-[14px]">lock</span>
+</div>
+<span class="font-label-sm text-[10px]">Booked</span>
+</div>
+</div>
+</div>
+<!-- Row 2: U2 | AISLE | U8, U9 -->
+<div class="grid grid-cols-12 gap-3 items-center">
+<div class="col-span-3">
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-U2" onclick="toggleSeat('U2', 949, 'Single Sleeper (Upper)')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">U2</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">single_bed</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹949</span>
+</div>
+</div>
+<div class="col-span-2 flex items-center justify-center">
+<div class="w-full flex items-center justify-center py-2 bg-surface-container-low rounded"><span class="font-mono-seat text-[10px] text-on-surface-variant/40">···</span></div>
+</div>
+<div class="col-span-7 grid grid-cols-2 gap-2">
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-U8" onclick="toggleSeat('U8', 899, 'Double Sleeper (Upper)')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">U8</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">king_bed</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹899</span>
+</div>
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-U9" onclick="toggleSeat('U9', 899, 'Double Sleeper (Upper)')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">U9</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">king_bed</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹899</span>
+</div>
+</div>
+</div>
+<!-- Row 3: U3 | AISLE | U10, U11 -->
+<div class="grid grid-cols-12 gap-3 items-center">
+<div class="col-span-3">
+<div class="h-16 rounded-lg bg-secondary/30 flex flex-col justify-between p-2 cursor-not-allowed text-on-surface-variant/70">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold">U3</span>
+<span class="material-symbols-outlined text-[14px]">lock</span>
+</div>
+<span class="font-label-sm text-[10px]">Booked</span>
+</div>
+</div>
+<div class="col-span-2 flex items-center justify-center">
+<div class="w-full flex items-center justify-center py-2 bg-surface-container-low rounded"><span class="font-mono-seat text-[10px] text-on-surface-variant/40">···</span></div>
+</div>
+<div class="col-span-7 grid grid-cols-2 gap-2">
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-U10" onclick="toggleSeat('U10', 899, 'Double Sleeper (Upper)')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">U10</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">king_bed</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹899</span>
+</div>
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-U11" onclick="toggleSeat('U11', 899, 'Double Sleeper (Upper)')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">U11</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">king_bed</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹899</span>
+</div>
+</div>
+</div>
+<!-- Row 4 & 5 Upper -->
+<div class="grid grid-cols-12 gap-3 items-center">
+<div class="col-span-3">
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-U4" onclick="toggleSeat('U4', 899, 'Single Sleeper (Upper)')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">U4</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">single_bed</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹899</span>
+</div>
+</div>
+<div class="col-span-2 flex items-center justify-center">
+<div class="w-full flex items-center justify-center py-2 bg-surface-container-low rounded"><span class="font-mono-seat text-[10px] text-on-surface-variant/40">···</span></div>
+</div>
+<div class="col-span-7 grid grid-cols-2 gap-2">
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-U12" onclick="toggleSeat('U12', 899, 'Double Sleeper (Upper)')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">U12</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">king_bed</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹899</span>
+</div>
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-U13" onclick="toggleSeat('U13', 899, 'Double Sleeper (Upper)')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">U13</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">king_bed</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹899</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-3 items-center">
+<div class="col-span-3">
+<div class="h-16 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex flex-col justify-between p-2 cursor-not-allowed">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold">U5</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary">female</span>
+</div>
+<span class="font-label-sm text-[10px] text-tertiary font-semibold">Reserved (F)</span>
+</div>
+</div>
+<div class="col-span-2 flex items-center justify-center">
+<div class="w-full flex items-center justify-center py-2 bg-surface-container-low rounded"><span class="font-mono-seat text-[10px] text-on-surface-variant/40">···</span></div>
+</div>
+<div class="col-span-7 grid grid-cols-2 gap-2">
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-U14" onclick="toggleSeat('U14', 899, 'Double Sleeper (Upper)')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">U14</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">king_bed</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹899</span>
+</div>
+<div class="seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs" id="seat-U15" onclick="toggleSeat('U15', 899, 'Double Sleeper (Upper)')">
+<div class="flex justify-between items-center">
+<span class="font-mono-seat text-mono-seat font-bold text-on-surface">U15</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">king_bed</span>
+</div>
+<span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹899</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Rear Restroom & Amenities Footnote -->
+<div class="mt-6 pt-4 bg-surface-container-low/70 -mx-4 -mb-4 p-4 rounded-b-xl flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">wc</span>
+<span>On-board Clean Washroom (Rear)</span>
+</div>
+<div class="flex items-center gap-space-sm font-mono-seat text-[11px]">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">power</span> 220V Plug</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">wifi</span> 5G WiFi</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bus Interior Photo Preview Tile -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col sm:flex-row items-center gap-space-md">
+<img class="w-full sm:w-36 h-24 rounded-lg object-cover" data-alt="High quality photography of luxury multi axle sleeper bus interior cabin with warm ambient mood lighting, plush private sleeping berths with dark red blankets, fresh white linens, personal reading lights, and high speed USB charging stations in clean modern transit environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDebRraZnKdLU6UFEq8_WVwGZGSs37WFqfJxKzMuevu8VQecgIgoaCYbEOjJLv4FVEDktgdVrpmk9pM-GQJMkgWhJN3ZTihZaYSUTij_6ad1jeYVSdEcrEZSGWLla7V5ihatI5YV-emP1Rg4Y_AY-UAnNqMS8Hc0d9PjjE61qwwtUvZ5ucBPY4pUOZNZ9Q84PUVWW5P_lr6JMA7mEi6d43OFqTA11u4CUcLM2I1WG4rch-yrrgmkNlT"/>
+<div class="flex-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Premium Private Cabin Sleepers</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Every sleeper berth is sanitized before departure and includes washed linen, sanitized blanket, 500ml mineral water, and reading light.</p>
+</div>
+<div class="shrink-0 flex items-center gap-1 px-space-sm py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+            Verified Fleet
+          </div>
+</div>
+</section>
+<!-- Right Column: Sticky Booking Summary Card (~340px - 380px) -->
+<aside class="lg:col-span-5 xl:col-span-4 sticky top-24 space-y-space-md">
+<div class="bg-surface-container-lowest rounded-2xl shadow-md p-space-md flex flex-col gap-space-md">
+<!-- Summary Header -->
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-low/40 -mx-space-md -mt-space-md p-space-md rounded-t-2xl">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Booking Details</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Trip Overview</h3>
+</div>
+<div class="flex items-center gap-1 text-primary bg-primary/10 px-space-sm py-1 rounded-full font-label-sm text-label-sm font-bold">
+<span id="selectedCountBadge">2 Seats</span>
+</div>
+</div>
+<!-- Selected Seats Pill Deck -->
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold block mb-2">Selected Berths</label>
+<div class="flex flex-wrap gap-2" id="selectedSeatsContainer">
+<div class="flex items-center gap-1 px-space-sm py-1.5 rounded-lg bg-primary-fixed text-on-primary-fixed font-label-md text-label-md shadow-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">single_bed</span>
+<span class="font-bold">L3</span>
+<span class="text-on-primary-fixed-variant text-[11px]">(Single Sleeper)</span>
+</div>
+<div class="flex items-center gap-1 px-space-sm py-1.5 rounded-lg bg-primary-fixed text-on-primary-fixed font-label-md text-label-md shadow-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">king_bed</span>
+<span class="font-bold">L10</span>
+<span class="text-on-primary-fixed-variant text-[11px]">(Double Sleeper)</span>
+</div>
+</div>
+</div>
+<!-- Boarding Point Dropdown Selector -->
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Boarding Location</label>
+<span class="font-label-sm text-label-sm text-primary font-bold">21:30 hrs</span>
+</div>
+<div class="relative">
+<select class="w-full h-13 px-space-md py-2.5 rounded-xl bg-surface-container-low font-body-md text-body-md text-on-surface appearance-none focus:outline-none focus:bg-surface-container-high transition-colors cursor-pointer pr-10">
+<option selected="" value="koyambedu">Koyambedu Bus Terminal, Platform 4 (21:30)</option>
+<option value="ashok-pillar">Ashok Pillar Metro Station, Gate 2 (21:45)</option>
+<option value="guindy">Guindy Kathipara Flyover Bridge (22:00)</option>
+<option value="tambaram">Tambaram Railway Gate Pickup Point (22:25)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3.5 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant pl-1">Landmark: Opposite omni bus terminus canteen, Gate #3</p>
+</div>
+<!-- Dropping Point Dropdown Selector -->
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Dropping Location</label>
+<span class="font-label-sm text-label-sm text-secondary font-bold">04:45 hrs</span>
+</div>
+<div class="relative">
+<select class="w-full h-13 px-space-md py-2.5 rounded-xl bg-surface-container-low font-body-md text-body-md text-on-surface appearance-none focus:outline-none focus:bg-surface-container-high transition-colors cursor-pointer pr-10">
+<option selected="" value="silk-board">Silk Board Junction, Hosur Road Flyover (04:45)</option>
+<option value="electronic-city">Electronic City Toll Gate Phase 1 (04:20)</option>
+<option value="madiwala">Madiwala Police Station Point (05:00)</option>
+<option value="majestic">Majestic (KSRTC Central Bus Stand) (05:30)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3.5 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant pl-1">Live tracking SMS sent 30 mins prior to arrival.</p>
+</div>
+<!-- Fare Breakdown Module -->
+<div class="bg-surface-container-low/60 p-space-md rounded-xl space-y-space-xs font-body-sm text-body-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>Base Fare (<span id="calcSeatCount">2</span> Seats)</span>
+<span class="font-mono-seat text-on-surface" id="calcBaseFare">₹1,698</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="flex items-center gap-1">
+                Operator Discount (-10%)
+                <span class="px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px]">SMART10</span>
+</span>
+<span class="font-mono-seat text-tertiary font-medium" id="calcDiscount">-₹170</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>GST &amp; Transit Insurance (5%)</span>
+<span class="font-mono-seat text-on-surface" id="calcTax">₹76</span>
+</div>
+<div class="pt-2 mt-2 flex items-center justify-between font-label-lg text-label-lg">
+<div class="flex flex-col">
+<span class="text-on-surface font-bold">Total Payable</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">All taxes included</span>
+</div>
+<span class="font-headline-md text-headline-md font-bold text-primary" id="calcTotal">₹1,604</span>
+</div>
+</div>
+<!-- Primary CTA Button -->
+<a class="w-full h-12 bg-primary hover:bg-primary-container active:scale-[0.98] transition-all rounded-lg flex items-center justify-center gap-space-sm text-on-primary font-label-lg text-label-lg font-bold shadow-md" href="#">
+<span>PROCEED TO PASSENGER DETAILS</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<!-- Cancellation Guarantee & Reassurance Badge -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Punctuality &amp; Refund Guarantee</span>
+<p class="font-body-sm text-[11px] text-on-surface-variant leading-relaxed">
+                Free Cancellation up to 6 hours before departure • 100% Instant Refund to original payment method.
+              </p>
+</div>
+</div>
+</div>
+<!-- Security / Safety Highlights -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed shrink-0">
+<span class="material-symbols-outlined text-[18px]">female</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block leading-tight">Women Travel Assurance</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Pink berths allocated strictly to solo female commuters.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[18px]">emergency_home</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block leading-tight">SOS &amp; Live Tracking</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Real-time emergency monitoring via 24x7 Command Center.</span>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Interactive JavaScript logic for Seat selection, Deck switching, and real-time total recalculations -->
+<script>
+    const state = {
+      selectedSeats: [
+        { id: 'L3', fare: 849, type: 'Single Sleeper' },
+        { id: 'L10', fare: 849, type: 'Double Sleeper' }
+      ]
+    };
+
+    function switchDeck(deck) {
+      const lowerTab = document.getElementById('tabLowerDeck');
+      const upperTab = document.getElementById('tabUpperDeck');
+      const lowerLayout = document.getElementById('deckLowerLayout');
+      const upperLayout = document.getElementById('deckUpperLayout');
+
+      if (deck === 'lower') {
+        lowerTab.className = "px-space-md py-2 rounded-lg font-label-md text-label-md transition-all font-bold bg-surface-container-lowest text-primary shadow-sm flex items-center gap-1.5";
+        upperTab.className = "px-space-md py-2 rounded-lg font-label-md text-label-md transition-all font-medium text-on-surface-variant hover:text-on-surface flex items-center gap-1.5";
+        lowerLayout.classList.remove('hidden');
+        upperLayout.classList.add('hidden');
+      } else {
+        upperTab.className = "px-space-md py-2 rounded-lg font-label-md text-label-md transition-all font-bold bg-surface-container-lowest text-primary shadow-sm flex items-center gap-1.5";
+        lowerTab.className = "px-space-md py-2 rounded-lg font-label-md text-label-md transition-all font-medium text-on-surface-variant hover:text-on-surface flex items-center gap-1.5";
+        upperLayout.classList.remove('hidden');
+        lowerLayout.classList.add('hidden');
+      }
+    }
+
+    function toggleSeat(id, fare, type) {
+      const index = state.selectedSeats.findIndex(s => s.id === id);
+      const seatEl = document.getElementById('seat-' + id);
+
+      if (index > -1) {
+        // Deselect seat
+        state.selectedSeats.splice(index, 1);
+        if (seatEl) {
+          seatEl.className = "seat-berth h-16 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between p-2 shadow-xs";
+          seatEl.innerHTML = `
+            <div class="flex justify-between items-center">
+              <span class="font-mono-seat text-mono-seat font-bold text-on-surface">${id}</span>
+              <span class="material-symbols-outlined text-[14px] text-secondary">king_bed</span>
+            </div>
+            <span class="font-mono-seat text-[11px] font-semibold text-on-surface-variant">₹${fare}</span>
+          `;
+        }
+      } else {
+        // Limit max seats to 6
+        if (state.selectedSeats.length >= 6) {
+          alert("Maximum 6 seats can be selected per booking.");
+          return;
+        }
+        // Select seat
+        state.selectedSeats.push({ id, fare, type });
+        if (seatEl) {
+          seatEl.className = "seat-berth h-16 rounded-lg bg-primary text-on-primary transition-all cursor-pointer flex flex-col justify-between p-2 shadow-md";
+          seatEl.innerHTML = `
+            <div class="flex justify-between items-center">
+              <span class="font-mono-seat text-mono-seat font-bold">${id}</span>
+              <span class="material-symbols-outlined text-[16px]">check_circle</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="font-label-sm text-[10px] font-bold">Selected</span>
+              <span class="font-mono-seat text-[11px] font-bold">₹${fare}</span>
+            </div>
+          `;
+        }
+      }
+      renderSummary();
+    }
+
+    function renderSummary() {
+      const count = state.selectedSeats.length;
+      document.getElementById('selectedCountBadge').innerText = `${count} Seat${count === 1 ? '' : 's'}`;
+      document.getElementById('calcSeatCount').innerText = count;
+
+      // Render pills
+      const container = document.getElementById('selectedSeatsContainer');
+      if (count === 0) {
+        container.innerHTML = `<span class="font-body-sm text-[12px] text-on-surface-variant italic">No seats selected yet. Click any available sleeper berth above.</span>`;
+      } else {
+        container.innerHTML = state.selectedSeats.map(seat => `
+          <div class="flex items-center gap-1 px-space-sm py-1.5 rounded-lg bg-primary-fixed text-on-primary-fixed font-label-md text-label-md shadow-xs">
+            <span class="material-symbols-outlined text-[16px] text-primary">airline_seat_flat</span>
+            <span class="font-bold">${seat.id}</span>
+            <span class="text-on-primary-fixed-variant text-[11px]">(${seat.type})</span>
+            <button onclick="toggleSeat('${seat.id}', ${seat.fare}, '${seat.type}')" class="ml-1 text-on-surface-variant hover:text-primary">
+              <span class="material-symbols-outlined text-[14px]">close</span>
+            </button>
+          </div>
+        `).join('');
+      }
+
+      // Calculate figures
+      const baseFare = state.selectedSeats.reduce((acc, s) => acc + s.fare, 0);
+      const discount = Math.round(baseFare * 0.10);
+      const tax = Math.round((baseFare - discount) * 0.05);
+      const total = (baseFare - discount) + tax;
+
+      document.getElementById('calcBaseFare').innerText = `₹${baseFare.toLocaleString('en-IN')}`;
+      document.getElementById('calcDiscount').innerText = `-₹${discount.toLocaleString('en-IN')}`;
+      document.getElementById('calcTax').innerText = `₹${tax.toLocaleString('en-IN')}`;
+      document.getElementById('calcTotal').innerText = `₹${total.toLocaleString('en-IN')}`;
+    }
+
+    // Countdown Timer Micro-interaction
+    let timeRemaining = 9 * 60 + 42;
+    setInterval(() => {
+      if (timeRemaining <= 0) return;
+      timeRemaining--;
+      const mins = Math.floor(timeRemaining / 60);
+      const secs = timeRemaining % 60;
+      const el = document.getElementById('sessionTimer');
+      if (el) {
+        el.innerText = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+      }
+    }, 1000);
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_6px_rgba(0,0,0,0.03)]"><div class="max-w-7xl mx-auto px-gutter pt-space-xl pb-space-lg"><div class="bg-secondary-container/40 rounded-xl p-space-lg mb-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0"><span class="material-symbols-outlined text-[24px]">support</span></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Need help with your journey?</h4><p class="font-body-md text-body-md text-on-surface-variant">Our 24/7 dedicated transit assistance desk is here to guide your travel.</p></div></div><div class="flex items-center gap-space-md"><a class="px-space-lg py-space-sm bg-surface-container-lowest text-on-surface font-label-lg text-label-lg rounded-lg shadow-[0_1px_3px_0_rgba(23,35,55,0.04)] hover:bg-surface-container-low transition-all" href="tel:918004628700">Call +91 800-462-8700</a><a class="px-space-lg py-space-sm bg-primary text-on-primary font-label-lg text-label-lg rounded-lg shadow-[0_2px_4px_rgba(214,57,65,0.3)] hover:bg-primary-container transition-all" data-path="help-and-faq" href="#">Live Chat</a></div></div><div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-space-lg mb-space-xl"><div class="col-span-2 lg:col-span-1"><div class="flex items-center gap-space-sm mb-space-md"><img alt="GoBus Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WNduh8w3pbMPyiMIicAPPZMLVcTjO0yhTFi_UMLFT_IWOzKW5L5xEmEicV59amkxggePlJwdYZ8PfNa0jtFmnVRZh7EyNSnagdXGTqjBWDehakk5q-x-cVY_dU1Jq6mKb8tq_1arQW7D7R1411XHVJBa1SVbz448ZZblhQaBraJwcy0hWeZyZ-rJYhiuWcBZ1KLzQMDhVHLu47r5fiqq_2nvhEbkcFH0XzIgQd2dJNh-8GA1ZZuH3RVUM"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-bold">GoBus</span></div><p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">Eliminating uncertainty from intercity transit with guaranteed schedules, verified operators, and instant seat confirmation.</p><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors text-[20px]">share</span><span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors text-[20px]">public</span><span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors text-[20px]">mail</span><span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors text-[20px]">forum</span></div></div><div><h5 class="font-label-lg text-label-lg text-on-surface font-bold mb-space-md uppercase tracking-wider">Popular Routes</h5><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">Delhi to Jaipur</a></li><li><a class="hover:text-primary transition-colors" href="#">Bengaluru to Goa</a></li><li><a class="hover:text-primary transition-colors" href="#">Mumbai to Pune</a></li><li><a class="hover:text-primary transition-colors" href="#">Chennai to Coimbatore</a></li><li><a class="hover:text-primary transition-colors" href="#">Hyderabad to Vijayawada</a></li></ul></div><div><h5 class="font-label-lg text-label-lg text-on-surface font-bold mb-space-md uppercase tracking-wider">Top Operators</h5><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">IntrCity SmartBus</a></li><li><a class="hover:text-primary transition-colors" href="#">Zingbus Electric</a></li><li><a class="hover:text-primary transition-colors" href="#">VRL Travels</a></li><li><a class="hover:text-primary transition-colors" href="#">SRS Travels</a></li><li><a class="hover:text-primary transition-colors" href="#">Orange Travels</a></li></ul></div><div><h5 class="font-label-lg text-label-lg text-on-surface font-bold mb-space-md uppercase tracking-wider">Booking &amp; Safety</h5><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">Bus Ticket Booking</a></li><li><a class="hover:text-primary transition-colors" href="#">Female Safety Protocol</a></li><li><a class="hover:text-primary transition-colors" href="#">Punctuality Guarantee</a></li><li><a class="hover:text-primary transition-colors" href="#">Live Bus Tracking</a></li><li><a class="hover:text-primary transition-colors" href="#">Cancellation &amp; Refund</a></li></ul></div><div><h5 class="font-label-lg text-label-lg text-on-surface font-bold mb-space-md uppercase tracking-wider">About &amp; Legal</h5><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">About GoBus</a></li><li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li><li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li><li><a class="hover:text-primary transition-colors" href="#">Security Standards</a></li><li><a class="hover:text-primary transition-colors" href="#">Partner with Us</a></li></ul></div></div><div class="pt-space-lg bg-surface-container-low/50 rounded-xl px-space-lg py-space-md flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm flex-wrap"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Secured Payment Partners:</span><div class="flex items-center gap-space-xs"><span class="px-space-sm py-0.5 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-bold shadow-[0_1px_2px_rgba(0,0,0,0.03)]">UPI</span><span class="px-space-sm py-0.5 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-bold shadow-[0_1px_2px_rgba(0,0,0,0.03)]">Visa</span><span class="px-space-sm py-0.5 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-bold shadow-[0_1px_2px_rgba(0,0,0,0.03)]">Mastercard</span><span class="px-space-sm py-0.5 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-bold shadow-[0_1px_2px_rgba(0,0,0,0.03)]">RuPay</span><span class="px-space-sm py-0.5 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-bold shadow-[0_1px_2px_rgba(0,0,0,0.03)]">NetBanking</span></div></div><div class="text-center md:text-right font-body-sm text-body-sm text-on-surface-variant">© 2025 GoBus Intercity Mobility Pvt. Ltd. All rights reserved.</div></div></div></footer></body></html>
